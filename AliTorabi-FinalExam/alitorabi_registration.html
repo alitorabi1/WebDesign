@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ali Torabi - LanGear Registration</title>
+		<!--
+			Name: Ali Torabi
+			Student ID: 1695843
+			Date: 9 June 2016
+		-->
+<link rel="stylesheet" type="text/css" href="styles/registration.css"/>
+	<script type="text/javascript">
+    	function registration_form_submit() {
+			if (document.getElementById("firstname").value === "") {
+				alert ("Please enter your first name.");
+				return false;
+			}
+			if (document.getElementById("lastname").value === "") {
+				alert ("Please enter your las name.");
+				return false;
+			}
+			if (document.getElementById("address1").value === "") {
+				alert ("Please enter your address.");
+				return false;
+			}
+/*		Note: address2 also could be validated if it is necessary
+			if (document.getElementById("address2").value === "") {
+				alert ("Please enter your address2.");
+			}
+*/
+			if (document.getElementById("city").value === "") {
+				alert ("Please enter the city name.");
+				return false;
+			}
+			if (document.getElementById("state").value === "") {
+				alert ("Please enter the state name.");
+				return false;
+			}
+			if (document.getElementById("zip").value === "") {
+				alert ("Please enter the zip code.");
+				return false;
+			}
+			if (document.getElementById("country").value === "") {
+				alert ("Please enter the country name.");
+				return false;
+			}
+			if (document.getElementById("purchasedDate").value === "") {
+				alert ("Please enter a valid date.");
+				return false;
+			}
+			if (document.getElementById("serialNumber").value === "") {
+				alert ("Please enter the serial number of your product.");
+				return false;
+			}
+/*
+			if (document.getElementById("select[name=itemPurchased].selected").value === "") {
+				alert ("Please select your item to purchase.");
+				return false;
+			}
+			if (document.getElementById("radio[name=usedFor]").value === "") {
+				alert ("Please select one item.");
+				return false;
+			}
+			if (document.getElementById("checkNetwork").value === "") {
+				alert ("Please check all that apply.");
+				return false;
+			}
+/*		Note: comments also could be validated if it is necessary
+			if (document.getElementById("comments").value === "") {
+				alert ("Please enter your first name.");
+			}
+*/
+		}
+    </script>
+	</head>
+
+	<body>
+    <div id="wrapper">
+    <header id="header">
+    	<div id="logo">
+        	<img src="images/langear_logo.jpg" width="183" height="75" alt="LanGear Logo" /><p>Quality Networking Hardware & Software </p>
+      <nav id="nav">
+      <a href="#">Home Page</a> | <a href="#">Orders</a> | <a href="#">Your Account</a> | <a href="#">Support</a> | <a href="#">Registration</a> | <a href="#">Routers</a> | <a href="#">Switches</a> | <a href="#">Adapters</a> | <a href="#">Wiring</a> | <a href="#">Bridges</a> | <a href="#">Servers</a> | <a href="#">Software</a> |
+      </nav>
+      </div>
+    </header>
+    <div id="mainContainer">
+    <h1>Product Registration</h1>
+    <hr />
+    <form name="registration_form" action="mailto:alitorabi1@yahoo.com?subject = Registration Form" method="post" enctype="application/x-www-form-urlencoded" id="registration_form" onsubmit="return registration_form_submit();">
+      <table width="97%" border="0">
+        <tr>
+          <td width="40%">First Name
+          <input type="text" name="firstname" id="firstname" /></td>
+          <td width="60%">Last Name
+          <input type="text" name="lastname" id="lastname" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Address #1
+          <input name="address1" type="text" id="address1" maxlength="150" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Address #2
+          <input type="text" name="address2" id="address2" /></td>
+        </tr>
+        <tr>
+          <td>City
+          <input type="text" name="city" id="city" /></td>
+          <td>State
+          <input type="text" name="state" id="state" />           Zip
+          <input type="text" name="zip" id="zip" /></td>
+        </tr>
+        <tr>
+          <td>Country
+          <input type="text" name="country" id="country" /></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Item purchased          
+            <select name="itemPurchased" id="itemPurchased">
+              <option value="" selected="selected">select an item</option>
+              <option value="">Routers</option>
+              <option value="115">LanPass 115</option>
+              <option value="125">LanPass 125</option>
+              <option value="250">LanPass 250</option>
+              <option value="">Switches</option>
+              <option value="200">FastSwitch 200</option>
+              <option value="400">FastSwitch 400</option>
+              <option value="">Adapters</option>
+              <option value="LG10">LG 10 Mbps</option>
+              <option value="LG10w">LG 10 Mbps/w</option>
+              <option value="LG100">LG 100 Mbps</option>
+              <option value="LG100w">LG 10 Mbps/w</option>
+          </select></td>
+          <td>Purchased Date
+          <input type="text" name="purchaseDate" id="purchaseDate" value="dd/mm/yyyy"/></td>
+        </tr>
+        <tr>
+          <td>Serial Number
+          <input type="text" name="serialNumber" id="serialNumber" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Used For(check one)</legend>
+            <label>
+              <input type="radio" name="usedFor" value="home" id="usedFor_0" />
+              Home</label>
+            <br />
+            <label>
+              <input type="radio" name="usedFor" value="business" id="usedFor_1" />
+              Business</label>
+            <br />
+            <label>
+              <input type="radio" name="usedFor" value="relOrChar" id="usedFor_2" />
+              Religious or Charitable</label>
+            <br />
+            <label>
+              <input type="radio" name="usedFor" value="gov" id="usedFor_3" />
+              Government</label>
+            <br />
+            <label>
+              <input type="radio" name="usedFor" value="edu" id="usedFor_4" />
+              Educational Institution</label>
+            <br />
+          </p>
+            </fieldset>
+          </td>
+          <td>
+            <fieldset>
+              <legend>Network Operating System (check all that apply)</legend>
+            <label>
+              <input type="checkbox" name="checkNetwork" value="netware" id="radioNetwork_0" />
+              Netware</label>
+            <br />
+            <label>
+              <input type="checkbox" name="checkNetwork" value="banyan" id="checkNetwork" />
+              Banyan Vines</label>
+            <br />
+            <label>
+              <input type="checkbox" name="checkNetwork" value="windows" id="radioNetwork_2" />
+              Windows</label>
+            <br />
+            <label>
+              <input type="checkbox" name="checkNetwork" value="ibm" id="radioNetwork_3" />
+              IBM Lan Server</label>
+            <br />
+            <label>
+              <input type="checkbox" name="checkNetwork" value="pcnfs" id="radioNetwork_4" />
+              PC/NFS</label>
+            <br />
+          </p>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Comments? 
+          <textarea name="comments" id="comments" cols="45" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" name="submit" id="submit" value="Send Registration" />            <input type="reset" name="cancel" id="cancel" value="Cancel" /></td>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <footer>
+    <p>LanGear Inc.  414 Wittlow Way - Farley, SD 85312 - 1(800) 5552387</p>
+    </footer>
+	</div>
+	</body>
+
+</html>

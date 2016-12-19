@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* Tozai Hotel css document for phone device*/
+
+#wrapper {
+	width: 100%;
+	background-image: url("../images/basin_bg_phone.jpg");
+	background-size: contain;
+}
+
+/* setting navigation */
+#nav ul {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	padding: 0;
+	font-weight: bold;
+	font-size: 12px;
+	height: 17px;
+}
+
+#nav ul li a {
+	width: 100px;
+	padding: 5px 3px;
+}
+
+#header h1 {
+	font-size: 36px;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-left: 90px;
+}
+
+#main {
+	width: 77%;
+}
+#main h2,p {
+	width: 300px;
+}
+
+#img_garden img {
+	display: none;
+}
+
+#blossom {
+	display: none;
+}
+
+#garden {
+	width: 100%;
+}

@@ -1,0 +1,81 @@
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #850000;
+	font-size:12px;
+	width: 600px;
+	margin: auto;
+}
+
+#wrapper {
+	width: 590px;
+	margin: auto;
+	background-color:#FF0;
+}
+
+#header {
+	display: inline-block;
+	background-color: #009afe;
+}
+#mainContainer h1 {
+	margin-left: 10px;
+}
+
+#logo p {
+	float: left;
+}
+#logo p {
+	float: right;
+	color: yellow;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 3px 3px auto auto;
+}
+
+#nav {
+	margin: -45px 5px 0 200px;
+}
+#nav a {
+	color: #850000;
+	font-weight: bold;
+}
+
+table {
+	margin: auto;
+}
+
+hr {
+	width: 97%;
+	border-color:#850000;
+}
+
+#firstname, #lastname {
+	width: 150px;
+}
+#address1, #address2 {
+	width: 380px;
+}
+
+#state {
+	width: 70px;
+}
+#zip {
+	width: 100px;
+}
+#comments {
+	width: 400px;
+}
+#submit {
+	margin-left: 150px;
+}
+#cancel {
+	margin-left: 10px;
+}
+
+footer{
+	background-color: white;
+	text-align: center;
+	padding: 3px;
+}

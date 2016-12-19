@@ -1,0 +1,121 @@
+/* styling of the home page */
+
+/* main */
+#home_page { 
+  background: url("../images/background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#greencorp {
+	margin-top: 8%;
+	font-size: 6em;
+}
+
+#slogan {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#table_hp{
+	margin-top: 7%;
+	border-spacing: 3em;
+    border-collapse: separate;
+}
+
+.hp_td{
+	font-size: 5em;
+	text-align: middle;
+}
+
+.hp_td:hover {
+	background-color: white;
+	color: black;
+}
+
+/* styling of the contact page */
+
+/* background image */
+
+#contact_page {
+	background: url("../images/project_map.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Styling of the billing and shipping.*/
+
+#bill_and_ship{
+  background: url("../images/trees.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+
+/* FAQ */
+
+#faq_page{ 
+  background: url("../images/wave_farm.JPG") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+/* Store home page */
+
+#store_homePage{
+	background: url("../images/residential_solutions.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

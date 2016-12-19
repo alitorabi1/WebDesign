@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* Tozai Hotel css document for desktop device*/
+
+#wrapper {
+	background: url("../images/basin_bg.jpg");
+	background-repeat: no-repeat;
+}
+#main {
+	background: url("../images/exterior.jpg") #fff no-repeat right;
+}
+#dining {
+	background: url("../images/chef.jpg") #fff no-repeat right top;
+}
+#sake {
+	background-image: url("../images/sake.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-bottom: 140px;
+}

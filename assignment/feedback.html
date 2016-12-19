@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+        <!-- FontAwesome -->
+        <link href="styles/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="js/jquery-1.10.2.js"></script>
+        <!-- Dragdealer JS -->
+        <script src="js/dragdealer.js"></script>
+        <!-- Dragdealer CSS -->
+        <link  href="styles/dragdealer.css" rel="stylesheet" type="text/css">
+        <!-- Example script -->
+        <script src="js/script.js"></script>
+        <!-- Example style -->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #contactus a {
+                color : #f37200;
+                text-decoration: none;
+            }
+            .leftFloated { 
+                width: 50%;
+                float: left;
+            }
+            .rightFloated { 
+                width: 50%;
+                float: right;
+            }
+            .bottomSide {
+                clear: both;
+                padding: 20px;
+                margin: auto;
+                text-align: center;
+            }
+            #thanks {
+                clear: both;
+                padding: 20px;
+                margin: auto;
+                text-align: center;
+                color: #236d02;
+            }
+        </style>
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#thanks").hide();
+                $("#frmFeedback").submit(function () {
+                    $("#thanks").show("slow");
+                    event.preventDefault();
+                });
+            });
+            $(function () {
+                new Dragdealer('fb1', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb1 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb2', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb2 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb3', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb3 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb4', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb4 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb5', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb5 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb6', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb6 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb7', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb7 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb8', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb8 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb9', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb9 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb10', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb10 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb11', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb11 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb12', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb12 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb13', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb13 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb14', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb14 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb15', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb15 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb16', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb16 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb17', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb17 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb18', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb18 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb19', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb19 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb20', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb20 .value').text(mark);
+                    }
+                });
+                new Dragdealer('fb21', {
+                    animationCallback: function (x, y) {
+                        var mark = Math.round(x * 100);
+                        $('#fb21 .value').text(mark);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h3>Help us make our site better for you!</h3>
+        <p>This form is for feedback. If you need help, please <span id="contactus"><a href="contactus.html">contact us</a></span> directly.</p>
+        <form id="frmFeedback" method="post" action="#">
+        <div id="leftSide" class="leftFloated">
+            <h4>Selling Fees</h4>
+            <table id="tblFees">
+                <tr>
+                    <td>Ease of Use</td>
+                    <td><div id="fb1" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Extra Photo Options</td>
+                    <td><div id="fb2" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store Subscription Fees (monthly)</td>
+                    <td><div id="fb3" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Final Value Fee (per item)</td>
+                    <td><div id="fb4" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Listing Fee</td>
+                    <td><div id="fb5" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relisting Fee</td>
+                    <td><div id="fb6" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Listing Upgrades</td>
+                    <td><div id="fb7" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div id="fb8" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h4>Payment Options</h4>
+            <table id="tblPaymentOptions">
+                <tr>
+                    <td>PayPal</td>
+                    <td><div id="fb9" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Credit Card</td>
+                    <td><div id="fb10" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alternative Payment Options</td>
+                    <td><div id="fb11" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="rightSide" class="rightFloated">
+            <h4>Listing Options</h4>
+            <table id="tblListingOptions">
+                <tr>
+                    <td>Ease of Use</td>
+                    <td><div id="fb12" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Extra Photo Options</td>
+                    <td><div id="fb13" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Save Seller Option</td>
+                    <td><div id="fb14" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Block Bidders & Buyers</td>
+                    <td><div id="fb15" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Early Listing Cancellation</td>
+                    <td><div id="fb16" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>International Listings</td>
+                    <td><div id="fb17" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h4>Support Options</h4>
+            <table id="tblSupportOptions">
+                <tr>
+                    <td>Email</td>
+                    <td><div id="fb18" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><div id="fb19" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Live Chat</td>
+                    <td><div id="fb20" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Community Forum</td>
+                    <td><div id="fb21" class="dragdealer" style="width:300px;">
+                            <div class="handle red-bar" style="width:50px;">
+                                <span class="value"></span>%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="rightSide" class="bottomSide">
+            <input type="submit">
+        </div>
+        </form>
+        <div id="thanks">
+            <h2>Thank you for submitting your feedback.</h2>
+            <h3>You chose a rating of - dissatisfied</h3>
+            <h4>Your opinion is important and we review all the feedback we receive. Remember, we don't reply directly to this feedback. If you need an answer, please visit our contact us page.</h4>
+        </div>
+    </body>
+</html>

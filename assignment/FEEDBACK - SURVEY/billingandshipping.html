@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Billing and shipping address</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+        <style>
+            .leftFloated { 
+                width: 25%;
+                float: left;
+            }
+            .rightFloated { 
+                width: 25%;
+                float: right;
+            }
+            .bottomSide {
+                clear: both;
+                font-size: 2em;
+                padding: 50px;
+                margin: auto;
+                text-align: center;
+                color: #236d02;
+            }
+            #tblInfoReview { 
+                border: solid thin; 
+                border-collapse: collapse;
+                text-align: center;
+            }
+            #tblInfoReview th { 
+                border: solid thin;
+                padding: 0.5rem 2rem;
+            }
+            .inputError {                
+                border-radius: 3px;
+                color: red;
+                width: 200px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".errorMessage").hide();
+                $("#bottomSide").hide();
+                $("#review").click(function () {
+                    var billingAddress = $("input[name=baddress]").val() + " " + $('input[name=bcity]').val() + " "
+                            + $('input[name=bprovince]').val() + " " + $('input[name=bpostalCode]').val() + "<br>"
+                            + $('select[name=bcountry]').val();
+                    var shippingAddress = $('input[name=saddress]').val() + " " + $('input[name=scity]').val() + " "
+                            + $('input[name=sprovince]').val() + " " + $('input[name=spostalCode]').val() + "<br>"
+                            + $('select[name=scountry]').val();
+                    $("#tdBilling").html(billingAddress);
+                    $("#tdShipping").html(shippingAddress);
+                    $("#tdPrice").html("Total: 547.08 CAD");
+                });
+                
+                $("#payment").click(function () {
+                    $("#bottomSide").show();
+                });
+
+                $('#isShipping').change(function () {
+                    if (this.checked) {
+                        $("#spostalcodeContainer .errorMessage").hide();
+                        $("#spostalcodeContainer").removeClass("inputError");
+                        $("#sprovinceContainer .errorMessage").hide();
+                        $("#sprovinceContainer").removeClass("inputError");
+                        $("#scityContainer .errorMessage").hide();
+                        $("#scityContainer").removeClass("inputError");
+                        $("#saddressContainer .errorMessage").hide();
+                        $("#saddressContainer").removeClass("inputError");
+                        $("#scountryContainer .errorMessage").hide();
+                        $("#scountryContainer").removeClass("inputError");
+                        $("input[name=saddress]").prop('disabled', true);
+                        $("input[name=scity]").prop('disabled', true);
+                        $("input[name=sprovince]").prop('disabled', true);
+                        $("input[name=spostalCode]").prop('disabled', true);
+                        $("select[name=scountry]").prop('disabled', true);
+                    } else {
+                        $("input[name=saddress]").prop('disabled', false);
+                        $("input[name=scity]").prop('disabled', false);
+                        $("input[name=sprovince]").prop('disabled', false);
+                        $("input[name=spostalCode]").prop('disabled', false);
+                        $("select[name=scountry]").prop('disabled', false);
+                        return;
+                    }
+                });
+                $("select[name=bcountry]").blur(function () {
+                    var value = $(this).val();
+                    if (value !== '') {
+                        $("#bcountryContainer .errorMessage").hide();
+                        $("#bcountryContainer").removeClass("inputError");
+                    } else {
+                        $("#bcountryContainer .errorMessage").show("slow");
+                        $("#bcountryContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=baddress]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[a-zA-Z0-9! \,\'\@#\$%\^\&*\)\(+=._-]+$/)) {
+                        $("#baddressContainer .errorMessage").hide();
+                        $("#baddressContainer").removeClass("inputError");
+                    } else {
+                        $("#baddressContainer .errorMessage").show("slow");
+                        $("#baddressContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=bcity]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[a-zA-Z0-9! \,\'\@#\$%\^\&*\)\(+=._-]+$/)) {
+                        $("#bcityContainer .errorMessage").hide();
+                        $("#bcityContainer").removeClass("inputError");
+                    } else {
+                        $("#bcityContainer .errorMessage").show("slow");
+                        $("#bcityContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=bprovince]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/)) {
+                        $("#bprovinceContainer .errorMessage").hide();
+                        $("#bprovinceContainer").removeClass("inputError");
+                    } else {
+                        $("#bprovinceContainer .errorMessage").show("slow");
+                        $("#bprovinceContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=bpostalCode]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/(^\d{5}(-\d{4})?$)|(^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[A-Z]{1} *\d{1}[A-Za-z]{1}\d{1}$)/)) {
+                        $("#bpostalcodeContainer .errorMessage").hide();
+                        $("#bpostalcodeContainer").removeClass("inputError");
+                    } else {
+                        $("#bpostalcodeContainer .errorMessage").show("slow");
+                        $("#bpostalcodeContainer").addClass("inputError");
+                    }
+                });
+
+                $("select[name=scountry]").blur(function () {
+                    var value = $(this).val();
+                    if (value !== '') {
+                        $("#scountryContainer .errorMessage").hide();
+                        $("#scountryContainer").removeClass("inputError");
+                    } else {
+                        $("#scountryContainer .errorMessage").show("slow");
+                        $("#scountryContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=saddress]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^\s*\S+(?:\s+\S+){2}$/)) {
+                        $("#saddressContainer .errorMessage").hide();
+                        $("#saddressContainer").removeClass("inputError");
+                    } else {
+                        $("#saddressContainer .errorMessage").show("slow");
+                        $("#saddressContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=scity]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/)) {
+                        $("#scityContainer .errorMessage").hide();
+                        $("#scityContainer").removeClass("inputError");
+                    } else {
+                        $("#scityContainer .errorMessage").show("slow");
+                        $("#scityContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=sprovince]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/)) {
+                        $("#sprovinceContainer .errorMessage").hide();
+                        $("#sprovinceContainer").removeClass("inputError");
+                    } else {
+                        $("#sprovinceContainer .errorMessage").show("slow");
+                        $("#sprovinceContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=spostalCode]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/(^\d{5}(-\d{4})?$)|(^[ABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Z]{1} *\d{1}[A-Z]{1}\d{1}$)/)) {
+                        $("#spostalcodeContainer .errorMessage").hide();
+                        $("#spostalcodeContainer").removeClass("inputError");
+                    } else {
+                        $("#spostalcodeContainer .errorMessage").show("slow");
+                        $("#spostalcodeContainer").addClass("inputError");
+                    }
+                });
+
+                $("input[name=creditNum]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[0-9]{14}$/)) {
+                        $("#creditNumContainer .errorMessage").hide();
+                        $("#creditNumContainer").removeClass("inputError");
+                    } else {
+                        $("#creditNumContainer .errorMessage").show("slow");
+                        $("#creditNumContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=expireDate]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[0-9]{2}\/[0-9]{2}$/)) {
+                        var dateList = value.split('/');
+                        var isValid = true;
+                        if ((parseInt(dateList[0]) < 16) || (parseInt(dateList[1]) > 12)) {
+                            isValid = false;
+                        }
+                        if (isValid) {
+                            $("#expireDateContainer .errorMessage").hide();
+                            $("#expireDateContainer").removeClass("inputError");
+                        } else {
+                            $("#expireDateContainer .errorMessage").show("slow");
+                            $("#expireDateContainer").addClass("inputError");
+                        }
+                    } else {
+                        $("#expireDateContainer .errorMessage").show("slow");
+                        $("#expireDateContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=cvv]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^[0-9]{3,4}$/)) {
+                        $("#cvvContainer .errorMessage").hide();
+                        $("#cvvContainer").removeClass("inputError");
+                    } else {
+                        $("#cvvContainer .errorMessage").show("slow");
+                        $("#cvvContainer").addClass("inputError");
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <form id="frmBillAddress" action="#" method="post">
+            <div id="billigDiv" class="leftFloated">
+                <h3 id="billAndShip">Billing address</h3><br>
+                <div id="bcountryContainer">
+                    <label for="bcountry">Country</label><br>
+                    <select id="bcountry" name="bcountry">
+                        <option value="" selected>Country</option>
+                        <option value="Canada">Canada</option>
+                        <option value="usa">United States of America</option>
+                        <option value="french">French</option>
+                        <option value="germany">Germany</option>
+                        <option value="iran">Iran</option>
+                        <option value="italy">Italy</option>
+                        <option value="spain">Spain</option>
+                    </select><br>
+                    <p class="errorMessage">Please select a country</p>
+                </div>
+                <div id="bprovinceContainer">
+                    <label for="bprovince">Province / State</label><br>
+                    <input type="text" name="bprovince"><br>
+                    <p class="errorMessage">Please enter the province / state name correctly</p>
+                </div>
+                <div id="bcityContainer">
+                    <label for="bcity">City</label><br>
+                    <input type="text" name="bcity"><br>
+                    <p class="errorMessage">Please enter the city name correctly</p>
+                </div>
+                <div id="baddressContainer">
+                    <label for="baddress">Street address</label><br>
+                    <input type="text" name="baddress"><br>
+                    <p class="errorMessage">Please enter the address correctly</p>
+                </div>
+                <div id="bpostalcodeContainer">
+                    <label for="bpostalCode">Postal code</label><br>
+                    <input type="text" name="bpostalCode"><br>
+                    <p class="errorMessage">Please enter the postal code correctly</p>
+                </div>
+            </div>
+            <div id="shippingDiv" class="leftFloated">
+                <h3>Shipping address</h3>
+                <input id="isShipping" type="checkbox" value="yes">Same as billing address.<br>
+                <div id="scountryContainer">
+                    <label for="scountry">Country</label><br>
+                    <select id="scountry" name="scountry">
+                        <option value="" selected>Country</option>
+                        <option value="Canada">Canada</option>
+                        <option value="usa">United States of America</option>
+                        <option value="french">French</option>
+                        <option value="germany">Germany</option>
+                        <option value="iran">Iran</option>
+                        <option value="italy">Italy</option>
+                        <option value="spain">Spain</option>
+                    </select><br>
+                    <p class="errorMessage">Please select a country</p>
+                </div>
+                <div id="sprovinceContainer">
+                    <label for="sprovince">Province / State</label><br>
+                    <input type="text" name="sprovince"><br>
+                    <p class="errorMessage">Please enter the province / state name</p>
+                </div>
+                <div id="scityContainer">
+                    <label for="scity">City</label><br>
+                    <input type="text" name="scity"><br>
+                    <p class="errorMessage">Please enter the city name correctly</p>
+                </div>
+                <div id="saddressContainer">
+                    <label for="saddress">Street address</label><br>
+                    <input type="text" name="saddress"><br>
+                    <p class="errorMessage">Please enter the address correctly</p>
+                </div>
+                <div id="spostalcodeContainer">
+                    <label for="spostalCode">Postal code</label><br>
+                    <input type="text" name="spostalCode"><br>
+                    <p class="errorMessage">Please enter the postal code correctly</p>
+                </div>
+            </div>
+            <div id="cardDiv" class="leftFloated">
+                <h3>Credit card information</h3><br>
+                <div id="creditNumContainer">
+                    <label for="creditNum">Credit card number</label><br>
+                    <input type="text" name="creditNum"><br>
+                    <p class="errorMessage">Please enter credit card number correctly</p>
+                </div>
+                <div id="expireDateContainer">
+                    <label for="expireDate">Expire date (yy/mm)</label><br>
+                    <input type="text" name="expireDate"><br>
+                    <p class="errorMessage">Please enter the date of expiration of credit card correctly</p>
+                </div>
+                <div id="cvvContainer">
+                    <label for="cvv">CVV</label><br>
+                    <input type="text" name="cvv"><br>
+                    <p class="errorMessage">Please enter the CVV of credit card correctly</p><br>
+                </div>
+                <input id="review" type="button" value="Review">
+            </div>
+        </form>
+        <div id="rightSide" class="rightFloated">
+            <table id="tblInfoReview">
+                <tr>
+                    <th>Review your Information</th>
+                </tr>
+                <tr>
+                    <td>Billing address</td>
+                </tr>
+                <tr>
+                    <td id="tdBilling">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="tdShippingTitle">Shipping address</td>
+                </tr>
+                <tr>
+                    <td id="tdShipping">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="tdPrice">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="payment" value="Payment"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="bottomSide" class="bottomSide">
+            <h3>Thank you for your order.</h3>
+            <p>It will arrive within 7 - 14 days.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<meta charset="utf-8"/>
+	<style>
+		#leftSide {
+			float: left;
+		}
+		#rightSide {
+			float: left;
+		}
+		footer {
+			clear: both;
+		}
+        .inputError {                
+            border-radius: 3px;
+            color: red;
+            width: 200px;
+        }
+	</style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".errorMessage").hide();
+                $("input[name=lemail]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                        $("#lemailContainer .errorMessage").hide();
+                        $("#lemailContainer").removeClass("inputError");
+                    } else {
+                        $("#lemailContainer .errorMessage").show("slow");
+                        $("#lemailContainer").addClass("inputError");
+                    }
+                });
+                $("input[name=caemail]").blur(function () {
+                    var value = $(this).val();
+                    if (value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                        $("#caemailContainer .errorMessage").hide();
+                        $("#caemailContainer").removeClass("inputError");
+                    } else {
+                        $("#caemailContainer .errorMessage").show("slow");
+                        $("#caemailContainer").addClass("inputError");
+                    }
+                });
+				$("#createAccount").submit(function (event) {
+					if ($("#pass1").val() === $("#pass2").val()) {
+                        $("#capasswordContainer .errorMessage").hide();
+                        $("#capasswordContainer").removeClass("inputError");
+                    } else {
+                        $("#capasswordContainer .errorMessage").show("slow");
+                        $("#capasswordContainer").addClass("inputError");
+						event.preventDefault();
+						return;
+                    }
+				});
+            });
+        </script>
+</head>
+<body>
+  <div id="wrapper">
+
+ 	<div id="headerContainer">
+		<header id="header">
+			header
+		</header>
+	</div>
+
+
+	<div id="mainContainer">
+
+	<div id="leftSide">
+		<section class="form">
+			<form id="login" action="index.html" method="post">
+				 <fieldset>
+				 	<p>I have my account</p>
+                <div id="lemailContainer">
+                    <label for="lemail">email</label><br>
+    				<input type="email" class="email" name="lemail" placeholder="E-mail" required="required"><br>
+                    <p class="errorMessage">Please enter a valid email address</p><br>
+                </div>
+       				<input type="password" class="password" name="password" placeholder="Password" required="required"><br>
+   					<input type="submit" id="submitButton" value="Log in">
+  				</fieldset>
+			</form>
+		</section>
+	</div>
+	<div id="rightSide">
+		<section class="form" >
+			<form id="createAccount" action="index.html" method="post">
+				<fieldset>
+					<p>I do not have an account</p>
+                <div id="caemailContainer">
+                    <label for="caemail">email</label><br>
+    				<input type="email" class="email" name="caemail" placeholder="E-mail" required="required"><br>
+                    <p class="errorMessage">Please enter a valid email address</p><br>
+                </div>
+                <div id="capasswordContainer">
+       				<input type="password" class="pass1" id="pass1" name="pass1" placeholder="Set a Password" required="required"><br>
+       				<input type="password" class="confirm" id="pass2" name="pass2" placeholder="Confirm your Password" required="required"><br>
+   					<input type="submit" value="Create account">
+                    <p class="errorMessage">Passwords you entered are not the same</p><br>
+                </div>
+				</fieldset>
+			</form>
+		</section>
+	</div>
+	</div>
+
+	<footer id="footer">
+		<nav id="linkNav">
+			footerNav
+		</nav>
+
+		<div id="copyright">
+			<p>Copyright &copy; 2016 Corporation</p>
+		</div>
+	</footer>
+  </div>
+
+</body>
+</html>

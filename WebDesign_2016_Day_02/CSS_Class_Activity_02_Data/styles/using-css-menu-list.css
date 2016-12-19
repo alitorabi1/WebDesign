@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document for using-css-menu */
+
+/*Developed by: your name */
+/*Today's Date: May 31, 2016 */
+
+/* to style the body elector */
+body {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+/* to style the div menu */
+div.menu {
+	font-weight:bold;
+	color:#fff;
+	background-color:#259;
+	border:2px solid #259;
+	text-align:center;
+	width:10em;
+}
+
+div.menu:hover a {
+	display:block;
+}
+
+div.menu a {
+	display:none;
+	border-top:2px solid #259;
+	background-color:#fff;
+	color:#000;
+	width:10em;
+	text-decoration:none;
+}
+
+div.menu a:hover {
+	background-color:#dfeeff;
+}
+
+	
+

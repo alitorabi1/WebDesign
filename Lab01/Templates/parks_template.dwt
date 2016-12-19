@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../styles/parks.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p><img src="../images/logo.gif" width="985" height="102" alt="Colorado natural monuments">
+</p>
+<h2><!-- TemplateBeginEditable name="monument_name" -->Spotlight on [name of natural monument]<!-- TemplateEndEditable --></h2>
+<p><!-- TemplateBeginEditable name="monument_description" --><strong>Add short description of monument</strong><!-- TemplateEndEditable --></p>
+<!-- TemplateBeginEditable name="monument_images" -->
+<table width="50%" border="1" id="tblImages" summary="This table has one row and two columns.">
+  <tr>
+    <td width="85%">Add additional columns and rows as necessary. Add images and short descriptions of images to each cell in the table.</td>
+    <td width="15%"><img src="" alt="Image of the monument" name="add_imgMonument" width="64" height="32" id="add_imgMonument"></td>
+  </tr>
+</table>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+<!-- TemplateBeginEditable name="park_links" -->
+<table width="50%" border="1" id="tblLinks" summary="This table contains the navigation links">
+  <tr>
+    <td>Add Web page name for link</td>
+  </tr>
+</table>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

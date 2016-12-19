@@ -1,0 +1,230 @@
+/* desktop style */
+@import url("desktop.css");
+
+
+*,html,body,div,dl,dt,dd,ul,ol,li,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul,li{list-style:none}
+caption,th{text-align:left}
+/*h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}*/
+q:before,q:after{content:''}strong{font-weight:bold}em{font-style:italic}
+a img{border:none}
+.aligncenter{display:block;margin:0 auto}
+.alignleft{float:left}.alignright{float:right}
+.wp-caption{border:1px solid #666;text-align:center;background:#ccc;padding:10px;margin:10px}
+.clear{clear:both;zoom:1;}.container{position:relative;max-width:1000px;margin:auto;padding:0 20px 0 20px;}
+.table{width:100%;height:100%;display:table;}
+.cell{width:100%;text-align:center;vertical-align:middle;height:100%;display:table-cell;}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+.grey-bg{background-color:#F4F5F6;}
+.header{
+    position:fixed;
+    top:0;background-color:white;width:100%;height:80px;
+    border-bottom:#EDEDED solid 1px;
+    -webkit-box-shadow:0px 2px 2px 0px rgba(245,245,245,1);
+    -moz-box-shadow:0px 2px 2px 0px rgba(245,245,245,1);
+    box-shadow:0px 2px 2px 0px rgba(245,245,245,1);
+    font-family:"proxima-nova";font-weight:300;
+    font-style:normal;font-size:14px;
+    z-index:1000;}
+.header .logo img{height:79px;width:auto;display:block;padding:0;}
+.header .logo{display:inline-block;border-left:solid #F5F5F5 1px;border-right:solid #F5F5F5 1px;margin-right:20px;padding:0;}
+.header .menu,.menu-header{display:inline-block;}
+.header .menu a{color:#989DA1;text-decoration:none;text-transform:uppercase;padding-bottom:0; }
+.header .menu a:hover{
+    color:#804000;  
+    
+    cursor: pointer;
+
+}
+.header .menu .current_page_item a,.header .menu .current-page-ancestor a{color:#3d454c;}
+.header .menu li{display:block;float:left;line-height:30px;padding:0 20px;padding-bottom: 25px;}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background:#804000;
+    transition: width .3s;
+    
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    
+}
+
+.mobile-nav{display:none;}
+
+
+
+@media (max-width: 56em){
+    .mobile-nav{display:block;z-index:1000;}
+                         .menu-header{display:none;}
+.menu-btn{position:absolute;display:inline-block;right:20px;top:20px;cursor:pointer;}
+.menu-btn div{position:absolute;left:100%;top:64%;padding-right:8px;margin-top:-0.50em;line-height:1.2;font-size:18px;font-weight:200;vertical-align:middle;z-index:99;}
+.menu-btn span{display:block;width:20px;height:2px;margin:4px 0;background:#989da1;z-index:99;}
+.responsive-menu{display:none;position:absolute;right:0;top:60px;font-size:22px;border-bottom:#EDEDED solid 1px;border-left:#EDEDED solid 1px;-webkit-box-shadow:0px 2px 2px 0px rgba(245,245,245,1);-moz-box-shadow:0px 2px 2px 0px rgba(245,245,245,1);box-shadow:0px 2px 2px 0px rgba(245,245,245,1);border-top:#EDEDED solid 1px;width:320px;box-sizing:border-box;background:#fff;}
+.responsive-menu .menu-header{display:block;}.responsive-menu .menu-header ul{background:#fff;position:relative;display:block;}
+.responsive-menu .menu-header li{background:#fff;float:none;line-height:55px;width:100%;text-align:center;border-bottom:#EDEDED solid 1px;position:relative;padding:0;}
+.responsive-menu .menu-header li:last-child{border-bottom:none;}.expand{display:block!important;}
+.responsive-menu .menu-header li .sub-menu{display:none;font-size:16px;}
+.responsive-menu .menu-header li .sub-menu li{border-bottom:none;line-height:35px;}
+.open-menu-link{display:none;position:absolute;right:15px;top:0;line-height:55px;color:#989DA1;font-size:30px;cursor:pointer;}
+.responsive-menu .menu-header li .visible{display:block;}
+img{ width: 100%;
+    height: auto;
+    display:block;
+}
+/*p,h1,h2,h3,h4,h5{
+    float: left;
+    margin: 3px;
+    padding: 7px;
+    width: 300px;
+    height: 300px;
+   
+}*/
+input[type='text'],textarea,input[type='submit'],input[type='email']{
+ width: 28%;
+      height: 23px;
+      margin: 0 auto;
+      border: auto;
+       border-radius: 5px;
+}
+input[type='submit']{
+    width:14%;
+    color:black;
+    font-size: 0.7em;
+    height:21px;
+    
+}
+#video{
+    width:90%;
+    
+     float:left;
+   
+}
+#mainAbout{
+    margin-top: 14vw;
+}
+
+#projectsHeader{
+	margin-top: 14vw;
+}
+#mainAbout{
+    margin-top: 14vw;
+	height: 170em;
+}
+
+}
+@media(max-width: 40em){
+    .responsive-menu, .responsive-menu .menu-header, .responsive-menu .menu-header .menu{
+        width: 100%;
+    }
+    .responsive-menu .menu-header li {
+        text-align: center;
+    }
+img { 
+	width: 100%;
+    height: auto;
+    display:block;
+}
+input[type='text'],textarea,input[type='submit'],input[type='email']{
+ width: 29%;
+      height: 20px;
+      margin: 0 auto;
+      border: auto;
+       border-radius: 5px;
+}
+input[type='submit']{
+    width:15%;
+    color:black;
+    font-size: 0.7em;
+    height:21px;
+    
+}
+#video{
+    width:90%;
+    
+    float:left;
+}
+
+
+#imgL1Holder{
+	display: none;
+}
+
+#imgL2Holder{
+	display: none;
+}
+
+#imgL3Holder{
+	display: none;
+}
+
+#imgR1Holder{
+	display: none;
+}
+
+#imgR2Holder{
+	display: none;
+}
+
+#imgR3Holder{
+	display: none;
+}
+
+button.accordion {
+                width: 95vw;
+                text-align: left;
+                outline: none;
+                font-size: 4vw;
+                transition: 0.4s;
+				opacity: 0.8;
+				margin-top: 3%;
+				font-weight: bold;
+}
+
+ .shopShowImage {
+	display: none;
+}
+
+#mainAbout{
+    margin-top: 14vw;
+	height: 210em;
+}
+
+#aboutUsArticleHolder{
+    margin-top: 10vw;
+}
+
+#projectsHeader{
+	margin-top: 24vw;
+}
+
+#mainFeedback{
+    margin-top: 3vw;
+	width: 10vw;
+	height: 100vw;
+}
+#review {
+	display: none;
+}
+
+#tblInfoReview {
+	display: none;
+}
+
+}

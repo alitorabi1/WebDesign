@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* Base CSS Document for Tozai Hotel website */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+	background-color: #eef2ef;
+}
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-color: #b4c4ba;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+header h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 66px;
+	color: #003;
+	margin: 0 0 0.3em 0;
+	padding: 25px 0 0 340px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+/* basic styles */
+h2, h3 {
+	font-size: 26px;
+	color: #003;
+	margin-top: 0;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+
+h3 {
+	font-size: 22px;
+}
+
+a {
+	color: #91784f;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: # b59d77;
+	text-decoration: none;
+}
+
+.floatLeft {
+	float: left;
+	margin: 3px 12px 3px 0;
+}
+
+.floatRight {
+	float: right;
+	margin: 3px 0px 3px 12px;
+}
+
+.floatLeft, .floatRight {
+	box-shadow: 3px 3px 5px #999;
+}
+
+/* main navigation */
+
+#nav ul {
+	list-style-type: none;
+	margin: 0 auto 15px 35px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 17px;
+	height: 35px;
+}
+
+#nav ul li {
+	float: left;
+	margin: 0 1px;
+}
+
+#nav ul li a {
+	display: block;
+	width: 160px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #003;
+	border-radius: 8px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+#nav ul li a:hover, #nav ul li a:hover, #nav ul li a:focus {
+	background-color: #26267E;	
+}

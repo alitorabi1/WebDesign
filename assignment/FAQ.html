@@ -1,0 +1,109 @@
+<!doctype html>
+<html id="faq_page">
+<head>
+<meta charset="utf-8">
+<script src="jquery-2.2.4.min.js"></script>
+<title>FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/reset.css" rel="stylesheet" type="text/css">
+<link href="styles/layout.css" rel="stylesheet" type="text/css">
+<link href="styles/desktop.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$(".ans").hide();
+
+		$("#p1").hover (function(){
+			$("#a1").slideToggle();
+		});
+
+		$("#p2").hover  (function(){
+			$("#a2").slideToggle();
+		});
+
+		$("#p3").hover  (function(){
+			$("#a3").slideToggle();
+		});
+
+		$("#p4").hover  (function(){
+			$("#a4").slideToggle();
+		});
+
+		$("#p5").hover (function(){
+			$("#a5").slideToggle();
+		});
+
+		$("#p6").hover  (function(){
+			$("#a6").slideToggle();
+		});
+
+		$("#p7").hover (function(){
+			$("#a7").slideToggle();
+		});
+	});
+</script>
+</head>
+<body>
+	<nav>
+		<img src="images/hamburger.png" width="65" height="65" class="display_ib opacity_and_color" alt="Hamburger Icon" id="hamburgerIcon">
+		<div id="hamburgerMenu" class="display_ib">
+		<ul id="hamburgerUl">
+			<li class="float_left liStyling"><a href="aboutUs.html" class="opacity_and_color">About Us</a></li>
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">Contact</a></li>
+			<li class="float_left liStyling"><a href="faq.html" class="opacity_and_color">FAQ</a></li>
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">Home</a></li>
+		</ul>
+		</div>
+	</nav>
+
+		<div id="container2">
+		<article id="FAQmain">
+		<h1 class="text_center"><span id="faqTitle">FAQ</span><br>And more....</h1>
+
+		<div id="questionAndAnswer">
+			<p class="para" id="p1">1. What is your Return Policy</p>
+			<p class="ans" id="a1"> Please do not return our products, it affects our bottom line.</p>
+			<p class="para" id="p2">2. Privacy Policy</p>
+			<p class="ans" id="a2">Our privacy policy is to not disclose any personal information, or tell your wife that you're cheating on her.</p>
+			<p class="para" id="p3">3. How do I setup an appointment?</p>
+			<p class="ans" id="a3">Easy , pick up the phone and call us.</p>
+			<p class="para" id="p4">4. Is it Dangerous</p>
+			<p class="ans" id="a4">Heck no, it's all good.</p>
+			<p class="para" id="p5">5. Do cows moo?</p>
+			<p class="ans" id="a5">Yes they do, and we haven't yet figured out how to contain that energy, but as soon as we do, we'll sell it.</p>
+			<p class="para" id="p6">6. Why is the sky blue?</p>
+			<p class="ans" id="a6">As far as what the human eye sees, yes it is blue, let's leave it at that.</p>
+			<p class="para" id="p7"> 7. What would I do with a million dollars?</p>
+			<p class="ans" id="a7">Heck I don't know where to begin, but it's late so I'll just sleep on it and get back to you... like the rest of these questions</p>
+		</div>
+		</article>  
+		</div> <!-- end of container2 -->
+
+		<footer>
+			<div class="display_ib footer_div">
+				<img src="images/logo.png" width="65">
+				<p>GREENCORP</p>
+			</div>
+			<div class="display_ib footer_div">
+				<p>123 kewl street<br>barbados<br>438-888-6545</p>
+			</div>
+			<div class="display_ib footer_div">
+				<a href="#" class="smIcon">
+					<img src="images/facebookIcon.png" width="40">
+				</a>
+				<a href="#" class="smIcon">
+					<img src="images/twitterIcon.png" width="40">
+				</a>
+				<a href="#" class="smIcon">
+					<img src="images/instagramIcon.png" width="40">
+				</a>
+				<a href="#" class="smIcon">
+					<img src="images/emailIcon.png" width="40">
+				</a>
+			</div>
+		</footer>
+	</nav>
+</body>
+</html>

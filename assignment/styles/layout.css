@@ -1,0 +1,480 @@
+
+/* general.*/
+
+body {
+    font-family: 'Quicksand', sans-serif;  
+}
+
+a {
+	text-decoration: none;
+}
+
+.opacity_and_color {
+	color: white;
+	opacity: 0.6;
+}
+
+.display_ib{
+	display: inline-block;
+}
+
+.float_right{
+	float: right;
+
+}
+
+.text {
+	text-align: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.text_center {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer.*/
+
+footer {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+	background-color: #4E494F;
+	padding: 1em;
+	margin-top: 5%;
+	height: 40px;
+
+}
+
+.footer_div{
+	width: 32%;
+	height: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.smIcon {
+	margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header with hamburger icon*/
+
+#hamburgerUl {
+    list-style-type: none;
+}
+
+.liStyling a {
+    display: block;
+}
+
+#hamburgerMenu{
+	vertical-align: top;
+	margin-top: 0.5%;
+}
+
+.liStyling {
+	text-align: center;
+	font-size: 230%;
+	padding: 0.2em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+.liStyling:hover{
+	border-bottom: 3px solid white;
+}
+
+
+
+
+
+/* home page */
+
+
+#table_hp{
+	width: 75%;
+	margin: auto;
+	margin-top: 3%;
+	font-size: 3em;
+}
+
+.hp_links:hover{
+	color:black;
+	background-color: WHITE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact page */
+
+#contact_form {
+	width: 75%;
+	margin: auto;
+	margin-top: 8%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border: 1em solid white;
+	background-color: black;
+}
+
+#contactForm_textArea {
+	width: 80%;
+	height: 40%;
+}
+
+.contactFormDiv{
+	padding-top: 2%;
+	width: 40%;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#specifyDiv {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 40px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* billing and shipping */
+
+.infoDiv{
+	width: 32%;
+
+
+}
+
+#topForm{
+	width: 80%;
+	margin: auto;
+	margin-top: 10%;
+	background-color: white;
+	opacity: 0.6;
+	font-weight: bold;
+	padding: 2em;
+}
+
+#bottomForm{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	opacity: 0.6;
+	margin-top: 60em;
+	margin-bottom: 20em;
+	padding: 2em;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about us */
+
+
+#leftBar{
+	vertical-align: top;
+	width: 20%;
+	height: 55em;
+}
+#mainArticle{
+	vertical-align: top;
+	width: 30%;
+	margin: 14%;
+	margin-top: 7%;
+	margin-bottom: 0;
+}
+
+#rightBar{
+	vertical-align: top;
+	width: 20%;	
+	height: 55em;
+	float: right;
+}
+
+#aboutUs_page nav{
+	background-color: black;
+	opacity: 0.5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ */
+
+#questionAndAnswer{
+	width: 80%;
+	margin: auto;
+	margin-top: 3em;
+
+}
+
+#container2 h1 {
+	font-size: 1.2em;
+	margin-top: 2%;
+}
+
+#faqTitle{
+	font-size: 2.9em;
+}
+
+
+.para{
+	font-size: 1.7em;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	opacity: 0.7;
+	margin-top: 1em;
+	padding: 1em 1em 1em 0.3em;
+}
+
+.para:hover{
+	font-size: 1.7em;
+	font-weight: bold;
+	color: black;
+	background-color: #B2B5B3;
+	opacity: 0.7;
+	margin-top: 1em;
+	padding: 1em 1em 1em 0.3em;
+}
+
+.ans{
+	background-color: red;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2;
+	padding: 1em 1em 1em 0.3em;
+	opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+/* store homepage */
+
+button.accordion {
+                background-color: white;
+                color: black;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+				opacity: 0.8;
+				margin-top: 3%;
+				font-weight: bold;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+	
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: '\02796';
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 100%;
+}
+            
+.product {
+    display:inline-block;
+    width: 42%;
+	margin: 3%;
+}
+            
+.imgProduct{
+    width:200px;
+}
+
+#storeHeader{
+	margin-top: 4%;
+	padding: 4%;
+	background-color: white;
+	opacity: 0.8;
+}
+
+#storeH1{
+	font-size: 3em;
+	color: black;
+	padding: 2%;
+	background-color: white;
+	border: 5px solid black;
+	opacity: 0.8;
+	font-weight: bold;
+}
+
+.panel{
+	width: 90%;
+	margin: auto;
+}
+
+.panel p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.6em;
+	
+}
+
+
+
+
+
+
+
+
+
+
+

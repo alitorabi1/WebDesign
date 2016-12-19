@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome | Green Corporation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GreenCorp Environmental Management Limited (GreenCorp) was established in 2005 to serve the growing technical, engineering, and infrastructure needs of smaller, rural municipalities in central and eastern Ontario.Green Corporation is one of active company that offers Renewable energy devices such as solar battery ,wind and hydro tourbines.">
+        <meta name="keywords" content="solar,wind,hydro,Renewable energy,Alternative Energies">
+        <meta name="author" content="Behnaz Ali Marilu Domenic Nikolay">
+        <link href="styles/reset.css" rel="stylesheet" type="text/css">
+        <link href="styles/desktop.css" rel="stylesheet" type="text/css">
+        <link href="styles/menu_responsive.css" rel="stylesheet" type="text/css">        
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+
+        	$(document).ready(function(){
+        		$("#hiddenNav").hide();
+
+        		$("#mainWelcome").hover (function(){
+				$("#hiddenNav").slideToggle();
+			});
+        	});
+
+        </script>
+</head>
+<body id="home_page">
+	
+	
+	<main id="homePageMain">
+		<div id="mainWelcome">
+			<header href="home.html">
+					<a href="home.html"><h1 id="greencorp">GREENCORP</h1></a>			
+			</header>
+            <nav id="hiddenNav">
+                <h2 id="motto">Welcome, to a sustainable future.</h2>
+                <ul id="verticalNav">
+                    <li class="verticalNavLi">
+                        <a href="home.html" class="verticalNavLink">
+                            <div class="linkTextHolder">HOME</div>
+                        </a>
+                    </li>
+                    <li class="verticalNavLi">
+                        <a href="products.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>PRODUCTS</p></div>
+                        </a>
+                    </li>
+                    <li class="verticalNavLi">
+                        <a href="projects.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>PROJECTS</p></div>
+                        </a>
+                    </li>
+                    <li class="verticalNavLi">
+                        <a href="aboutUs.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>ABOUT US</p></div>
+                        </a>
+                    </li> 
+                    <li class="verticalNavLi">
+                        <a href="shop.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>SHOP</p></div>
+                        </a>
+                    </li>
+                    <li class="verticalNavLi">
+                        <a href="FAQ.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>FAQ</p></div>
+                        </a>
+                    </li>
+                    <li class="verticalNavLi">
+                        <a href="contact.html" class="verticalNavLink">
+                            <div class="linkTextHolder"><p>CONTACT</p></div>
+                        </a>
+                    </li>                                            
+                </ul>
+            </nav>
+        </div>
+	</main>
+	
+</body>
+</html>

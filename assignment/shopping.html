@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="shopping online from Green Corp- order your solar wind or hydro battry in Green orp">
+        <meta name="keywords" content="solar,battery,turbin,hydro">
+        <meta name="author" content="Behnaz Ali Marilu Nikolay Dominic">
+        <link href="styles/reset.css" rel="stylesheet" type="text/css">
+        <link href="styles/layout.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <script src="jquery-2.2.3.min.js"></script>
+        <script src="js/shopping_cart.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $("#hamburgerMenu").hide();
+
+                $("#hamburgerIcon").click(function () {
+                    $("#hamburgerMenu").toggle();
+                });
+
+            });
+
+
+        </script>
+        <style>
+            /***In the HTML in step one we placed the large image inside a <span>, now we move it off the page until it's required***/
+            ul.enlarge span{
+                position:absolute; /*see support section for more info on positioning*/
+                left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+            }
+
+
+
+            /***Style the unordered list with the class 'enlarge'***/
+            ul.enlarge{
+                list-style-type:none; /*remove the bullet point*/
+            }
+            ul.enlarge li{
+                display:inline-block; /*places the images in a line*/
+                position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */
+                z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
+                margin:18px 40px 0 20px; /*space between the images*/
+            }
+
+
+            /***Note: This styling will apply to both the thumbnail and popup image, unless you override these styles in step five***/
+            ul.enlarge img{
+                /*give the thumbnails a frame*/
+                background-color:#eae9d4; /*frame colour*/
+                padding: 6px; /*frame size*/
+                /*add a drop shadow to the frame*/
+                -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+                -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+                box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+                /*and give the corners a small curve*/
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+            ul.enlarge li:hover{
+				width: 10px;
+                z-index: 50; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/ 
+                cursor:pointer; /*changes the cursor to a hand*/
+            }
+
+            ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+                top: -200px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+                left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+            }
+
+
+            ul.enlarge li:hover:nth-child span{
+                left: -200px; 
+            }
+            #wrapper1{
+                margin :65px;
+                padding: 20px;
+            }
+            h1{
+                font-size: 20px;
+                font-weight: bold;
+                color:white;
+            }
+            form{
+                padding-bottom:  5px;
+                margin-bottom: 15px;
+            }
+            .add-item{
+
+                width:30px;
+                font-size: 12px;
+                font-weight: bold;
+                height:25px;
+            }
+            .caption1{
+                font-weight: bold;
+                color:white;
+                font-size: 22px;
+                background-color: orange;
+
+            }
+            .shopInput{
+                width:80px;
+                height:20px;
+            }
+
+
+            table {
+                width: 524px;
+                padding-top: 8px;
+                padding-bottom: 15px;
+                margin: 0 auto 40px auto;
+
+                border-radius: 15px;    
+                -moz-border-radius: 15px;    
+                -webkit-border-radius: 15px;
+                // color: #446bb3;
+                padding:10px;
+
+            }
+            table { background-color : #fff; color : #000; font-size:18px;text-align: center;font-weight: bold;}
+            thead { background-color: #446bb3  ; color :#000; padding:6px; line-height:30px;   font-size: 20px;a}
+            tbody tr:nth-child(even) {background: #CCC;padding:6px;height:25px; }
+            tbody tr:nth-child(odd) {background: #FFF;padding:6px;height:25px; }
+
+            #submitB button{
+
+                height:45px;
+                width:130px;
+                margin-bottom:6px;
+            }
+            #submitB{
+                display: block;
+                width: 150px;
+                float:right;
+                margin: 10px;
+                clear: both;
+                right:0;
+                margin-bottom:10px;
+                padding-bottom:20px;
+            }
+            #clearCartAll img{
+                height:40px; 
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <img src="images/hamburger.png" width="65" height="65" class="display_ib opacity_and_color" alt="Hamburger Icon" id="hamburgerIcon">
+            <div id="hamburgerMenu" class="display_ib">
+                <ul id="hamburgerUl">
+                    <li class="float_left liStyling"><a href="#" class="opacity_and_color">About Us</a></li>
+                    <li class="float_left liStyling"><a href="#" class="opacity_and_color">Contact</a></li>
+                    <li class="float_left liStyling"><a href="#" class="opacity_and_color">FAQ</a></li>
+                    <li class="float_left liStyling"><a href="#" class="opacity_and_color">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="wrapper1">
+            <div>
+                <h1> GreenCorp's Products  </h1>
+            </div>
+            <ul class="enlarge"> 
+                <li>
+                    <img src="images/hydro1_thumb.jpg" width="150px" height="100px" alt="hydrotourbin1" />
+                    <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/hydro1.jpg" alt="Hydro Tourbin1 889.0" /> 
+                        <br /><p class="caption1">Hydro Tourbin1 889.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :5000$</p>
+                    <form>
+                        <label for="hydro1" ></label><input  class="shopInput" type="number" id="hydro1" data-name="hydro1"    value="1">
+                        <button  class='add-item' data-name='hydro1' data-price="5000">+</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/hydro2_thumb.jpg" width="150px" height="100px" alt="hydrotourbin2" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/hydro2.jpg" alt="Hydro Tourbin2 489.0" /> 
+                        <br /><p class="caption1">Hydro Tourbin2 489.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :5890$</p>
+                    <form>
+                        <label for="hydro2" ></label><input  class="shopInput" type="number" id="hydro2" data-name="hydro2"   value="1">
+                        <button  class='add-item' data-name='hydro2'  data-price="5890"  >+</button>
+                    </form>
+                </li>
+
+                <li>
+                    <img src="images/hydro3_thumb.jpg" width="150px" height="100px" alt="hydrotourbin3" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/hydro3.jpg" alt="Hydro Tourbin3 389.0" /> 
+                        <br /><p class="caption1">Hydro Tourbin3 489.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :5560$</p>
+                    <form>
+                        <label for="hydro3" ></label><input  class="shopInput" type="number" id="hydro3" data-name="hydro3"  value="1">
+                        <button  class='add-item' data-name='hydro3' data-price="5560">+</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/solar1_thumb.jpg" width="150px" height="100px" alt="solAR battry" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/solar1.jpg" alt="solar battry 1" /> <!--popup image-->
+
+                        <br /><p class="caption1">solar battery 1 </p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :3900$</p>
+                    <form>
+                        <label for="solar1" ></label><input  class="shopInput" type="number" id="solar1" data-name="solar1"  value="1">
+                        <button  class='add-item' data-name='solar1' data-price="3900">+</button>
+                    </form>
+                    </span>
+                </li>
+                <!--Third Image-->
+                <li>
+                    <img src="images/solar2_thumb.jpg" width="150px" height="100px" alt="solarBattry2" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/solar2.jpg" alt="solar battery 2" /> <!--popup image-->
+
+                        <br /><p class="caption1">solar battry 2 </p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :2999$</p>
+                    <form>
+                        <label for="solar2" ></label><input  class="shopInput" type="number" id="solar2" data-name="solar2"    value="1">
+                        <button  class='add-item' data-name='solar2' data-price="2999">+</button>
+                    </form>
+                    </span>
+                </li>
+                <li>
+                    <img src="images/solar3_thumb.jpg" width="150px" height="100px" alt="solarBattry3" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/solar3.jpg" alt="solar battery 3" /> <!--popup image-->
+
+                        <br /><p class="caption1">solar battry 3 </p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :3200$</p>
+                    <form>
+                        <label for="solar3" ></label><input  class="shopInput" type="number" id="solar3" data-name="solar3"  value="1">
+                        <button  class='add-item' data-name='solar3' data-price="3200">+</button>
+                    </form>
+                    </span>
+                </li>
+                <li>
+                    <img src="images/wind1_thumb.jpg" width="150px" height="100px" alt="windtourbin1" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/wind1.jpg" alt="Wind Tourbin1 449.0" /> 
+                        <br /><p class="caption1">Wind Tourbin1 449.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :6770$</p>
+                    <form>
+                        <label for="wind1" ></label><input  class="shopInput" type="number" id="wind1" data-name="wind1"  value="1">
+                        <button  class='add-item' data-name='wind1' data-price="6770">+</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/wind2_thumb.jpg" width="150px" height="100px" alt="windtourbin2" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/wind2.jpg" alt="Wind Tourbin2 449.0" /> 
+                        <br /><p class="caption1">Wind Tourbin2 3349.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :5800$</p>
+                    <form>
+                        <label for="wind2" ></label><input  class="shopInput" type="number" id="wind1" data-name="wind2"  value="1">
+                        <button  class='add-item' data-name='wind2' data-price="5800" >+</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/wind3_thumb.jpg" width="150px" height="100px" alt="windtourbin3" /> <!--thumbnail image-->
+                    <span> <!--span contains the popup image-->
+                        <img src="images/wind3.jpg" alt="Wind Tourbin3 6679.0" /> 
+                        <br /><p class="caption1">Wind Tourbin3 6679.0</p>  <!--caption appears under the popup image-->
+                    </span>
+                    <br><br>
+                    <p>price :5420$</p>
+                    <form>
+                        <label for="wind3" ></label><input  class="shopInput" type="number" id="wind3" data-name="wind3"  value='1'>
+                        <button  class='add-item' data-name='wind3' data-price="5420">+</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div id="submitB">
+                <button id="clearCartAll"><img src="images/clearCart.png" alt="clear your shopping cart" title="clear your shopping cart"></button>
+
+                <button id="checkOut" onclick="window.location.href = 'checkout.html'" title="Go to check out">CheckOut</button>
+            </div>
+            <table  id="show-cart">
+
+
+            </table>
+
+        </div>
+
+        <footer>
+            <div class="display_ib footer_div">
+                <img src="images/logo.png" width="65" alt="logo">
+                <p>GREENCORP</p>
+            </div>
+            <div class="display_ib footer_div">
+                <p>123 kewl street<br>barbados<br>438-888-6545</p>
+            </div>
+            <div class="display_ib footer_div">
+                <a href="#" class="smIcon">
+                    <img src="images/facebookIcon.png" width="40">
+                </a>
+                <a href="#" class="smIcon">
+                    <img src="images/twitterIcon.png" width="40">
+                </a>
+                <a href="#" class="smIcon">
+                    <img src="images/instagramIcon.png" width="40">
+                </a>
+                <a href="#" class="smIcon">
+                    <img src="images/emailIcon.png" width="40">
+                </a>
+            </div>
+
+        </footer>
+        <script>
+            loadCart();
+            displayCart();
+            $(".add-item").click(function (event) {
+                var name = $(this).attr("data-name");
+                var price = parseFloat($(this).attr('data-price'));
+                var count = $(this).prev().val();
+                if (count <= 0) {
+                    alert("the Qty of order it can't be minus or zero");
+                    return;
+                }
+                addItemToCart(name, price, count);
+                displayCart();
+            });
+
+
+            $("#show-cart").on("click", ".delete-item", function (event) {
+                //$(".delete-item").click(function () {
+                var name = $(this).attr("data-name");
+                removeItemFromCartAll(name);
+                displayCart();
+            });
+            $("#show-cart").on("click", ".subtract-item", function (event) {
+                // $(".subtract-item").click(function () {
+                var name = $(this).attr("data-name");
+                removeItemFromCart(name);
+                //setCountForItem(name, count);
+                displayCart();
+            });
+            $("#clearCartAll").click(function (event) {
+                clearCart();
+                loadCart()
+                displayCart();
+            });
+
+
+            function displayCart() {
+
+                var cartArray = listCart();
+                //  var output = "<tbody>";
+                var output = '<caption></caption><THEAD> <TR> <TH>List of orders</TH> <TH>Qty</TH> <TH>price</TH> <TH>total price</TH> <TH><img src="images/basket.png" alt="shopping_basket" width="50" height="50"></TH></TR> </THEAD>';
+                for (var i in cartArray) {
+                    output += "<tr><td>"
+                            + cartArray[i].name + "</td>"
+                            + "<td>" + cartArray[i].count + "</td>"
+                            + "<td>" + cartArray[i].price + "$</td>"
+                            + "<td>" + cartArray[i].total + "$</td>"
+                            + "<td>"   //<button class='plus-item' data-name='"
+                            // + cartArray[i].name + "'>+</button>"
+                            + " <button class='subtract-item' title='substract count of item' data-name='"
+                            + cartArray[i].name + "'>-</button>"
+                            + " <button class='delete-item' title='delete this item in basket' data-name='"
+                            + cartArray[i].name + "'>X</button>"
+                            + "</td></tr>";
+                }
+                var t = countCart();
+                output += "<tr color='blue'><td>Total Price</td><td></td><td></td><td>" + t + "$</td></tr>";
+                $("#show-cart").html(output);
+                //  $("#total-cart td").html(totalCart());
+            }
+
+        </script>
+
+    </body>
+</html>

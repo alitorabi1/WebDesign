@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Colorado Attractions</title>
+<link href="styles/parks.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#colMap {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 1;
+	visibility: visible;
+	left: 0;
+	top: 220px;
+}
+#northernColorado {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 2;
+	left: 480px;
+	top: 220px;
+	visibility: hidden;
+}
+#centralColorado {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 1;
+	left: 480px;
+	top: 220px;
+	visibility: hidden;
+}
+#southernColorado {
+	position: absolute;
+	width: 440px;
+	height: 350px;
+	z-index: 3;
+	left: 480px;
+	top: 220px;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<p>Colorado has a variety od national parks, national monuments and recreation areas spread through the state.</p>
+<div id="colMap"><img src="images/map2.gif" alt="Colorado Map" name="coloradoMap" width="440" height="350" usemap="#coloradoMapMap" id="coloradoMap">
+  <map name="coloradoMapMap">
+    <area shape="rect" coords="0,0,450,120" href="northern.html" alt="Northern Colorado" onMouseOver="MM_showHideLayers('northernColorado','','show','southernColorado','','hide','centralColorado','','hide');MM_showHideLayers('northernColorado','','hide','southernColorado','','hide','centralColorado','','hide')">
+    <area shape="rect" coords="0,120,470,241" href="#" alt="Centeral Colorado" onMouseOver="MM_showHideLayers('northernColorado','','hide','southernColorado','','hide','centralColorado','','show');MM_showHideLayers('northernColorado','','hide','southernColorado','','hide','centralColorado','','hide')">
+    <area shape="rect" coords="0,240,465,355" href="#" alt="Southern Colorado" onMouseOver="MM_showHideLayers('northernColorado','','hide','southernColorado','','show','centralColorado','','hide');MM_showHideLayers('northernColorado','','hide','southernColorado','','hide','centralColorado','','hide')">
+  </map>
+</div>
+<div id="northernColorado"><img src="images/northern.jpg" alt="Northern Colorado Features" name="northernFeatures" width="452" height="362" id="northernFeatures"></div>
+<div id="southernColorado"><img src="images/southern.jpg" width="451" height="362" alt="Southern Colorado Features"></div>
+<div id="centralColorado"><img src="images/central.jpg" alt="Central Colorado Features" name="centralFeatures" width="452" height="362" id="centralFeatures"></div>
+</body>
+</html>

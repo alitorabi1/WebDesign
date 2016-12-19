@@ -1,0 +1,73 @@
+<!doctype html>
+<html id="home_page">
+<head>
+<meta charset="utf-8">
+<script src="jquery-2.2.4.min.js"></script>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/reset.css" rel="stylesheet" type="text/css">
+<link href="styles/layout.css" rel="stylesheet" type="text/css">
+<link href="styles/desktop.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$("#hamburgerMenu").hide();
+
+		$("#hamburgerIcon").click(function(){
+            $("#hamburgerMenu").toggle();
+        });
+	});
+</script>
+</head>
+<body>
+	<div>
+	<nav>
+	<div id="navigation_div">
+		<img src="images/hamburger.png" width="65" height="65" class="display_ib opacity_and_color" alt="Hamburger Icon" id="hamburgerIcon">
+		<div id="hamburgerMenu" class="display_ib">
+		<ul id="hamburgerUl">
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">About Us</a></li>
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">Contact</a></li>
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">FAQ</a></li>
+			<li class="float_left liStyling"><a href="#" class="opacity_and_color">Home</a></li>
+		</ul>
+		</div>
+	</div>
+	</nav>
+	<main>
+		<h1 class="text_center opacity_and_color" id="greencorp">GREENCORP</h1>
+		<h5 class="text_center opacity_and_color" id="slogan">For a sustainable future.</h5>
+		<table class="text_center" id="table_hp">
+			<tr>
+				<td class="opacity_and_color hp_links" id="hp_leftTd">PURCHASE</td>
+				<td class="opacity_and_color hp_links" id="hp_rightTd">SERVICES</td>
+			</tr>
+		</table>
+	</main>
+	<footer>
+		<div class="display_ib footer_div">
+			<img src="images/logo.png" width="65">
+			<p>GREENCORP</p>
+		</div>
+		<div class="display_ib footer_div">
+			<p>123 kewl street<br>barbados<br>438-888-6545</p>
+		</div>
+		<div class="display_ib footer_div">
+			<a href="#" class="smIcon">
+				<img src="images/facebookIcon.png" width="40">
+			</a>
+			<a href="#" class="smIcon">
+				<img src="images/twitterIcon.png" width="40">
+			</a>
+			<a href="#" class="smIcon">
+				<img src="images/instagramIcon.png" width="40">
+			</a>
+			<a href="#" class="smIcon">
+				<img src="images/emailIcon.png" width="40">
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

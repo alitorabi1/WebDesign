@@ -1,0 +1,49 @@
+eye: An organ of vision or of light sensitivity.
+
+Source: The American Heritage® Dictionary of the English Language, Fourth Edition 
+Copyright © 2000 by Hougton Mifflin Company. 
+Published by Hougton Mifflin Company. All rights reserved
+
+
+********************
+Nose: The part of the face that contains the nostrils and organs of smell and forms the beginning of the respiratory tract.
+
+Source: The American Heritage® Dictionary of the English Language, Fourth Edition 
+Copyright © 2000 by Hougton Mifflin Company. 
+Published by Hougton Mifflin Company. All rights reserved.
+
+******************
+
+Mouth: Mouth
+
+Source: The American Heritage® Dictionary of the English Language, Fourth Edition 
+Copyright © 2000 by Hougton Mifflin Company. 
+Published by Hougton Mifflin Company. All rights reserved.
+
+
+***********
+
+***********
+Ear
+
+The vertebrate organ of hearing, responsible for maintaining equilibrium as well as sensing sound and divided in mammals into the external ear, the middle ear, and the inner ear.
+
+The American Heritage® Dictionary of the English Language, Fifth Edition copyright ©2015 by Houghton Mifflin Harcourt Publishing Company. All rights reserved. 
+***********
+
+
+
+Left Ear
+  <area shape="rect" coords="17,129,56,204" href="#" />
+Right Ear
+  <area shape="rect" coords="206,128,230,201" href="#" />
+Right Eye
+  <area shape="circle" coords="162,144,28" href="#" />
+Left Eye
+  <area shape="circle" coords="86,144,27" href="#" />
+Nose
+  <area shape="circle" coords="127,193,23" href="#" />
+Mouth
+  <area shape="rect" coords="87,215,165,246" href="#" />
+Hair  
+<area shape="poly" coords="224,105,28,105,49,38,83,5,149,9,186,18,211,51" href="#" />

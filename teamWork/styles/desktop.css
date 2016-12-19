@@ -1,0 +1,1233 @@
+.responsive-menu li {
+	margin: 0;
+}
+
+/* visited link */
+a:visited {
+    background-color: white;
+	color: black;
+}
+.hp_td:hover {
+	background-color: white;
+	color: black;
+        cursor: pointer;
+}
+
+/* styling of the contact page */
+
+
+/* background image */
+
+#contact_page {
+	background: url("../images/project_map.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Styling of the billing and shipping.*/
+
+#bill_and_ship{
+  background: url("../images/trees.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+
+/* FAQ */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 100%;
+}
+
+#faq_page{ 
+/*  background: url("../images/background.jpg") no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Store home page */
+
+#store_homePage{
+/*  background: url("../images/background.jpg") no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+}
+
+/* comes from layout.css */
+html,body{
+	height: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+#main_shop{
+	width: 63vw;
+	margin: auto;
+    margin-top: 5vw;
+}
+
+/*
+#main_shop h1 {
+	width: 45vw;
+	margin: auto;
+    margin-top: 3vw;
+    margin-left: 4vw;
+	font-size: 3vw;
+	text-align: center;
+	color: black;
+	padding: 2%;
+	background-color: white;
+	border: 5px solid black;
+	border: auto;
+	opacity: 0.8;
+	font-weight: bold;
+}
+*/
+
+#main_section p{
+ color:#000;
+ z-index: 50;
+ padding-top: 20px;
+}
+
+#main_section:before{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+/*  background: url("../images/background.jpg") no-repeat center center fixed;  */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;   
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+a {
+	text-decoration: none;
+}
+
+
+
+#hamburgerUl {
+    list-style-type: none;
+}
+
+.fixed_background_image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.opacity_and_color {
+	color: white;
+	opacity: 0.6;
+}
+
+.text_center {
+	text-align: center;
+	margin: auto;
+}
+
+.display_ib{
+	display: inline-block;
+}
+
+.float_right{
+	float: right;
+
+}
+
+.text {
+	text-align: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.liStyling a {
+    display: block;
+}
+
+#hamburgerMenu{
+	vertical-align: top;
+	margin-top: 0.5%;
+}
+
+.liStyling {
+	text-align: center;
+	font-size: 230%;
+	padding: 0.2em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+/*   -----------------------------------------------------------------------             */
+
+
+.liStyling a {
+    display: block;
+}
+
+.liStyling {
+	text-align: center;
+	font-size: 230%;
+	padding: 0.2em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+.liStyling:hover{
+	border-bottom: 3px solid white;
+}
+
+
+/* contact page */
+.errorMessage{color: red;}
+
+.inputError input{
+     border: 1px solid red;
+}
+.inputError p{
+	color: yellow;
+        font-size: 0.7em;
+        padding: 0;
+        margin :auto;
+        text-align: center;
+        background-color: white;
+        width: 30%;
+        height:30%;            
+        color: red;
+}
+
+
+#contactForm_textArea {
+	width: 80%;
+	height: 40%;
+}
+
+.contactFormDiv{
+	width: 49%;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.specifyDiv {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 20px;
+	height: 42px;
+}
+
+#divThanks p {
+
+                padding: 20px;
+
+                margin: auto;
+
+                text-align: center;
+
+                color: #236d02;
+
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+#contact_form {
+	color: #000;
+    display: block;
+	width: 53vw;
+	margin:auto;
+	margin-top: 5vw;
+}
+
+#contactForm_textArea {
+	width: 80%;
+	height: 40%;
+}
+
+.contactFormDiv{
+        margin-top: 0.9%;
+	padding-top: 1%;
+	width: 40%;
+	font-size: 1.05em;
+	font-weight: bold;
+        padding-bottom: 3%;
+        
+}
+
+
+input[type='text'],textarea,input[type='submit'],input[type='email']{
+ width: 22%;
+      height: 23px;
+      margin: 0 auto;
+      border: auto;
+       border-radius: 10px;
+}
+input[type='submit']{
+    width:10%;
+    color:black;
+    font-size: 1em;
+    height:22px;
+    font-weight: bold;
+}
+
+#specifyDiv {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 3px;	
+}
+
+
+
+
+/*shoping*/
+
+
+
+/* billing and shipping */
+
+.infoDiv{
+	width: 32%;
+
+
+}
+
+#topForm{
+	width: 80%;
+	margin: auto;
+	margin-top: 10%;
+	background-color: white;
+	opacity: 0.6;
+	font-weight: bold;
+	padding: 2em;
+}
+
+#bottomForm{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	opacity: 0.6;
+	margin-top: 60em;
+	margin-bottom: 20em;
+	padding: 2em;
+	font-weight: bold;
+}
+
+
+/* about us */
+
+
+#leftBar{
+	vertical-align: top;
+	width: 20%;
+	height: 55em;
+}
+#mainArticle{
+	vertical-align: top;
+	width: 30%;
+	margin: 14%;
+	margin-top: 7%;
+	margin-bottom: 0;
+        font-size: 1.1em;
+}
+
+#rightBar{
+	vertical-align: top;
+	width: 20%;	
+	height: 55em;
+	float: right;
+}
+
+#aboutUs_page nav{
+	background-color: black;
+	opacity: 0.5
+}
+
+
+/*project*/
+article{
+    padding: 0 auto;
+    margin:0 auto;
+}
+#video{
+    width:100%;
+    margin:auto;
+    margin-left: 30%;
+}
+video{
+    margin-top:10px;
+    margin-bottom: 25px;
+    padding-bottom: 50px;
+    
+}
+
+
+/* FAQ */
+
+.para{
+	font-size: 1.7vw;
+	font-weight: bold;
+	color: black;
+	margin-top: 1em;
+	padding: 1vm;
+}
+
+/* store homepage */
+
+button.accordion {
+                background-color: white;
+                color: black;
+                cursor: pointer;
+                padding: 2.1vw;
+                width: 56vw;
+                text-align: left;
+                outline: none;
+                font-size: 1.5vw;
+                transition: 0.4s;
+				opacity: 0.8;
+				margin-top: 3%;
+				font-weight: bold;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+	
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: '\02796';
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 100%;
+}
+            
+.product {
+    display:inline-block;
+    width: 42%;
+	margin: 3%;
+}
+            
+.imgProduct{
+    width:200px;
+}
+
+#projectsHeader{
+	margin-top: 4vw;
+	padding: 4vw;
+}
+
+.panel{
+	width: 90%;
+	margin: auto;
+}
+
+.panel p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.6em;
+	
+}
+
+
+/* contact page */
+
+/* billing and shipping */
+
+.infoDiv{
+	width: 32%;
+
+
+}
+
+#topForm{
+	width: 80%;
+	margin: auto;
+	margin-top: 10%;
+	background-color: white;
+	opacity: 0.6;
+	font-weight: bold;
+	padding: 2em;
+}
+
+#bottomForm{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	opacity: 0.6;
+	margin-top: 60em;
+	margin-bottom: 20em;
+	padding: 2em;
+	font-weight: bold;
+}
+
+
+/***thumbnail imges***/
+ul.enlarge span{
+    position:absolute; 
+    left: -9999px; 
+}
+
+
+
+/***Style the unordered list with the class 'enlarge'***/
+ul.enlarge{
+    list-style-type:none; 
+}
+ul.enlarge li{
+    display:inline-block;
+    position: relative; 
+    z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
+    margin:18px 40px 13px 20px; /*space between the images*/
+}
+
+
+/***Note:  thumbnail and popup image,*/
+ul.enlarge img{
+
+    background-color:#eae9d4; /*frame colour*/
+    padding: 6px; /*frame size*/
+
+    -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    /*and give the corners a small curve*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+ul.enlarge li:hover{
+    z-index: 50;  
+    cursor:pointer; /*changes the cursor to a hand*/
+}
+
+ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+    top: -45px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: -24px; 
+}
+
+
+ul.enlarge li:hover:nth-child span{
+    left: -200px; 
+}
+#wrapper1{
+    margin :65px;
+    padding: 20px;
+}
+/*h1{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+}*/
+form{
+    padding-bottom:  5px;
+    margin-bottom: 15px;
+}
+.add-item{
+
+    width:30px;
+    font-size: 12px;
+    font-weight: bold;
+    height:25px;
+}
+.caption1{
+    /*font-weight: bold;*/
+    color:black;
+    font-size: 1em;
+    background-color: grey;
+
+}
+.shopInput{
+    width:80px;
+    height:20px;
+}
+
+
+table {
+    width: 524px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    margin: 0 auto 30px auto;
+
+    border-radius: 15px;    
+    -moz-border-radius: 15px;    
+    -webkit-border-radius:15px; 
+    padding:10px;
+
+}
+table {
+   
+
+    background-color : #fff; color : #000; font-size:18px;text-align: center;font-weight: bold;
+}
+thead { background-color: #446bb3  ; color :#000; padding:6px; line-height:30px;   font-size: 20px;}
+tbody tr:nth-child(even) {background: #CCC;padding:6px;height:25px; }
+tbody tr:nth-child(odd) {background: #FFF;padding:6px;height:25px; }
+
+#submitB button{
+   margin-top: 0;
+   padding-top: 0;
+    height:45px;
+    width:130px;
+    margin-bottom:20px;
+    display: inline-block;
+   
+}
+#submitB{
+   height:50px;  
+    width: 100%;
+    margin:auto;
+     margin-bottom: 25px;
+    padding-bottom: 45px;
+   
+}
+#clearCartAll img{
+    height:16px; 
+}
+
+
+
+/* styling the feedback page   */
+
+#mainFeedback{
+    margin-top: 3vw;
+	height: 100vw;
+}
+
+#main_section h3 {
+	margin-left: 4vw;
+	margin-top: 4vw;
+}
+
+#frmFeedback h4 {
+	font-size: 1.4vw;
+	font-weight: bold;
+	color: #f37200;
+	margin-left: 7vw;
+	margin-top: 3vw;
+	margin-bottom: 1vw;
+	
+}
+#frmFeedback h1 {
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+#feedbackContactus a {
+	color : #f37200;
+	text-decoration: none;
+}
+
+.feedbackBottomSide {
+	clear: both;
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+#feedbackThanks {
+	clear: both;
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+	color: #236d02;
+}
+
+
+/* -------------------------
+      styling of the welcome index
+---------------------------*/
+#verticalNav {
+	margin-top: 3vw;
+	vertical-align: middle;
+}
+
+.linkTextHolder{
+	width: 100%;
+	font-size: 2vw;
+	color: white;
+	font-weight: bold;
+	vertical-align: middle;
+	padding-top: 2.5vw;
+	padding-bottom: 2vw;
+}
+
+.linkTextHolder:hover{
+	background-color: white;
+	width: 100%;
+	font-size: 2vw;
+	color: black;
+	font-weight: bold;
+	vertical-align: middle;
+	padding-top: 2.5vw;
+	padding-bottom: 2vw;
+}
+
+#home_page { 
+  background: url("../images/background1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#greencorp {
+    width: 100%;
+    height: 100%;
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+
+
+#motto{
+    width: 100%;
+    height: 100%;
+    font-size: 3.8vw;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#mainWelcome{
+    border: 3px solid white;
+    display: inline-block;
+    padding: 50px;
+    width: 50%;
+    margin-top: 15vw;
+    background-color: black;
+    opacity: 0.8;
+    margin-bottom: 25%;
+}
+
+
+#homePageMain{
+    text-align: center;
+}
+
+.indexUlLink{
+  color: #B0ADB0;  
+}
+/* -------------------------
+      end of
+      styling of the
+      welcome index
+---------------------------*/
+
+
+/* -------------------------
+      styling of the
+      home
+---------------------------*/
+#homeMainContainer{
+    width: 95%;
+    height: 50vw;
+    margin: auto;
+    margin-top: 7%;
+	
+}
+
+#articleHolder{
+    display: inline-block;
+    width: 35%;
+    height: 50vw;
+    overflow: scroll;
+    box-shadow: 3px 3px 7px #888888;
+}
+
+#homeImageHolder{
+    display: inline-block;
+    width: 63%;
+    height: 50vw;
+    float: right;
+    background-image: url("../images/home_desktop.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: 3px 3px 7px #888888;
+}
+
+#homeArticleText {
+    width: 72%;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#homeImage{
+  color: white;
+  background: rgba(5,5,5,1);
+  font-size: 3em;
+background: -moz-linear-gradient(top, rgba(5,5,5,1) 0%, rgba(0,0,0,0.94) 32%, rgba(0,0,0,0.85) 46%, rgba(0,0,0,0.82) 51%, rgba(1,1,1,0.79) 55%, rgba(5,5,5,0.68) 71%, rgba(5,5,5,0.65) 76%, rgba(5,5,5,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,5,5,1)), color-stop(32%, rgba(0,0,0,0.94)), color-stop(46%, rgba(0,0,0,0.85)), color-stop(51%, rgba(0,0,0,0.82)), color-stop(55%, rgba(1,1,1,0.79)), color-stop(71%, rgba(5,5,5,0.68)), color-stop(76%, rgba(5,5,5,0.65)), color-stop(100%, rgba(5,5,5,0)));
+background: -webkit-linear-gradient(top, rgba(5,5,5,1) 0%, rgba(0,0,0,0.94) 32%, rgba(0,0,0,0.85) 46%, rgba(0,0,0,0.82) 51%, rgba(1,1,1,0.79) 55%, rgba(5,5,5,0.68) 71%, rgba(5,5,5,0.65) 76%, rgba(5,5,5,0) 100%);
+background: -o-linear-gradient(top, rgba(5,5,5,1) 0%, rgba(0,0,0,0.94) 32%, rgba(0,0,0,0.85) 46%, rgba(0,0,0,0.82) 51%, rgba(1,1,1,0.79) 55%, rgba(5,5,5,0.68) 71%, rgba(5,5,5,0.65) 76%, rgba(5,5,5,0) 100%);
+  height: 15vw;
+}
+
+#homeImageText{
+  margin-left: 2vw;
+  padding-top: 2vw; 
+}
+/* -------------------------
+      end of the
+      styling of the
+      home
+---------------------------*/
+/* -------------------------
+      styling of the
+      FEEDBACK
+---------------------------*/
+
+#feedbackText{
+    background-color: #CFF0B0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 2vw;
+    padding-top: 0.5vw; 
+    padding-bottom: 0.5vw;
+    color: #B0ADB0;
+    text-align: center;
+    margin-top: 7vw;
+}
+
+#feedbackText:hover{
+    background-color: #B0ADB0;
+    color: #CFF0B0;
+}
+
+/* -------------------------
+      End of the
+      styling of the
+      Feedback.
+---------------------------*/
+/* -------------------------
+      styling of the
+      footer
+---------------------------*/
+
+footer {
+  font-size: 1vw;
+  position: absolute;
+  width: 100%;
+  background-color: #B0ADB0;
+}
+
+
+#footerholder{
+  width: 100%;
+}
+
+
+.footerDiv{
+  width: 100%;
+}
+
+#smbox{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0.2vw 0 0.2vw 0;
+  margin-top: 0.5vw;
+}
+
+#addressbox{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0.2vw 0 0.2vw 0;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+#namebox{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0.2vw 0 0.2vw 0;
+  margin-bottom: 0.5vw;
+}
+
+/* styling of 4 images (social media icon) */
+
+#smFacebook{
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  max-height: 50px;
+  background-image: url("../images/facebookIcon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#smTwitter{
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  background-image: url("../images/twitterIcon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#smInstagram{
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  background-image: url("../images/instagramIcon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#smEmail{
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  background-image: url("../images/emailIcon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#usefulLinks {
+  text-align: center;
+}
+/* -------------------------
+      end of the
+      styling of the
+      footer
+---------------------------*/
+/* -------------------------
+      styling of the
+      about us
+---------------------------*/
+
+#mainAbout{
+    margin-top: 3vw;
+}
+
+#rightAside_about{
+	float: right;
+}
+
+#aboutUsArticle{
+    width: 52vw;
+    margin: auto;
+    vertical-align: top;
+    height: 70vw;
+}
+
+#aboutUsArticleHolder{
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3vw;
+
+}
+
+#aboutUsArticleHolderText{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top:3vw;
+    padding: 1vw;
+    font-size: 2vw;
+    overflow: scroll;
+
+}
+
+#aboutUsLinkHolder{
+    text-align: center;
+    margin-top: 3vw;
+}
+
+#aboutUsLink{
+    font-size: 3vw;
+    padding: 1.5vw;
+    color: #CFF0B0;
+    background-color: #B0ADB0;
+}
+
+#aboutUsLink:hover{
+  color: #B0ADB0;
+  background-color: #CFF0B0;
+}
+
+.aboutUsImg{
+  margin: 0.5vw;
+}
+
+/* styling of 6 images (3 on each sides)*/
+
+#imgL1Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/home_desktop.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#imgL2Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/wind-turbine.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#imgL3Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/dam.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#imgR1Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/residential_solutions.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#imgR2Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/nightFalls.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#imgR3Holder{
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../images/wave_farm.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* -------------------------
+          End of The About
+          Us Styling
+---------------------------*/
+
+
+/*	Products Page	*/
+#productsArticle{
+    width: 52vw;
+    margin: auto;
+    vertical-align: top;
+    height: auto;
+}
+
+            /* jssor slider bullet navigator skin 05 css */
+            /*
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+            */
+            .jssorb05 {
+                position: absolute;
+            }
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('images/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb05 div { background-position: -7px -7px; }
+            .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+            .jssorb05 .av { background-position: -67px -7px; }
+            .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+            /* jssor slider arrow navigator skin 12 css */
+            /*
+            .jssora12l                  (normal)
+            .jssora12r                  (normal)
+            .jssora12l:hover            (normal mouseover)
+            .jssora12r:hover            (normal mouseover)
+            .jssora12l.jssora12ldn      (mousedown)
+            .jssora12r.jssora12rdn      (mousedown)
+            */
+            .jssora12l, .jssora12r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 30px;
+                height: 46px;
+                cursor: pointer;
+                background: url('images/a12.png') no-repeat;
+                overflow: hidden;
+            }
+            .jssora12l { background-position: -16px -37px; }
+            .jssora12r { background-position: -75px -37px; }
+            .jssora12l:hover { background-position: -136px -37px; }
+            .jssora12r:hover { background-position: -195px -37px; }
+            .jssora12l.jssora12ldn { background-position: -256px -37px; }
+            .jssora12r.jssora12rdn { background-position: -315px -37px; }
+
+ #jssor_1 {
+	 position: relative;
+	 margin: 0 auto;
+	 top: 0px; 
+	 left: 0px;
+	 width: 950px; 
+	 height: 650px; 
+	 overflow: hidden;
+	 visibility: hidden;
+	 padding:0;
+ }
+ 
+ .mainHeader {
+	width: 45vw;
+	margin: auto;
+    margin-top: 3vw;
+    margin-left: 4vw;
+	font-size: 2vw;
+	text-align: center;
+	color: black;
+	padding: 2vw;
+	border: 5px solid black;
+	border: auto;
+	font-weight: bold;
+ }
+ 
+ .projectsDesc {
+	 width: 42vw;
+	 margin: auto;
+ }
+ 
+ 
+ /* Billing and Shipping */
+ 
+.leftFloated { 
+	width: 25%;
+	float: left;
+}
+.rightFloated { 
+	width: 25%;
+	float: right;
+}
+.bottomSide {
+	clear: both;
+	font-size: 2em;
+	padding: 50px;
+	margin: auto;
+	text-align: center;
+	color: #236d02;
+}
+#tblInfoReview { 
+	border: solid thin; 
+	border-collapse: collapse;
+	text-align: center;
+}
+#tblInfoReview th { 
+	border: solid thin;
+	padding: 0.5vw;
+}
+.inputError {                
+	border-radius: 3px;
+	color: red;
+	width: 200px;
+}
+#tdPrice{color:red;}
+
+#frmBillAddress {
+	text-align: center;
+}
+
+#frmBillAddress h3 {
+	color : #f37200;
+}
+
+.inlineDisp {
+	display: inline;
+	margin-left: 50px;
+}
+#rightSide p {
+	text-align: center;
+}
+
+#main_shipping {
+	text-align: center;
+	width: 50vw;
+}

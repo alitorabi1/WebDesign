@@ -1,0 +1,32 @@
+@charset "utf-8";
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+}
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #000;
+}
+body {
+	background-image: url(../images/parksbg.gif);
+}
+.centerAlign {
+	text-align: center;
+}
+.leftAlign {
+	text-align: left;
+}
+.rightAlign {
+	text-align: right;
+}
+.floatLeft {
+	float: left;
+}
+.floatRightt {
+	float: right;
+}
+
+h1{
+	color: #030;
+}
